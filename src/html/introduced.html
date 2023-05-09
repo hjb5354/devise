@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影分享网站</title>
+    <link rel="stylesheet" href="../css/introduced.css">
+    <!-- <link rel="stylesheet" href="css/top.css"> -->
+</head>
+<body>
+  <div class="header ">
+    <div class="top-container " clearfix>
+      <div>
+          <div class="top-title">
+              <h1>电影分享网站</h1>
+          </div>
+      </div>
+        <div class="logo">
+            <a href="#">
+                <img src="../img/top-tupi.jpg" width="150" alt="电影分享网站">
+            </a>
+        </div>
+        <ul class="list">
+            <li class="current" data-id="111">
+               <a href="../index.html#111">首页</a> 
+            </li>
+            <li data-id="222">
+                <a href="../index.html#222">动漫</a>
+                
+            </li >
+            <li data-id="333">
+                <a href="../index.html#333">电影</a>
+            </li>
+            <li data-id="444">
+               <a href="../index.html#444">电视剧</a>
+            </li>
+            <li data-id="555">
+                <a href="../index.html#555">综艺</a>
+            </li>
+            <!-- <li data-id="666">
+                播放
+            </li> -->
+            <li data-id="777">
+                <a href="../index.html#777"> 联系我</a> 
+            </li>
+            
+           
+            
+            
+        </ul>
+        
+        
+        <div class="search">
+            <form>
+                 <input type="submit" value="搜索" class="search1">
+                <input type="text" class="content1">
+                
+            </form>
+      </div>
+          <ul class="denglu">
+             <li data-id="666">
+                  <a href="./denglu.html" target="_blank">登录/注册</a>
+                  <!-- 登录/注册 -->
+             </li> 
+          </ul>
+    </div>
+</div>
+
+
+    <div class="introduced-backimg-box ">
+
+    </div>
+  
+  
+    <!-- </div> -->
+    <div class="introduced-title container">
+      <h2 id="title"></h2>
+      <p id="title_msg"></p>
+    </div>
+  
+  
+    <div class="introduced-video container">
+  
+      <video width="100%" height="100%" controls>
+        <source id="video_url" src="../video/1.mp4" type="video/mp4">
+      </video>
+  
+    </div>
+  
+  
+    <div class="introduced-body container flex-c-t">
+      <div class="left">
+        <img id="posters" alt="">
+        <ul>
+          <li>
+            <span>导演:</span>
+            <span id="director"></span>
+          </li>
+          <li>
+            <span>编剧:</span>
+            <span id="writers"></span>
+          </li>
+          <li>
+            <span>类型:</span>
+            <span id="type"></span>
+          </li>
+          <li>
+            <span>语言:</span>
+            <span id="language"></span>
+          </li>
+          <li>
+            <span>片长:</span>
+            <span id="time"></span>
+          </li>
+        </ul>
+        <button><a href="./playback.html"> 在线观看</a></button>
+      </div>
+      <div class="right">
+        <h2>视频介绍</h2>
+        <span id="introduce1"></span>
+  
+        <span id="introduce2"> </span>
+        <h2>视频截图</h2>
+  
+        <img class="video_capture" alt="">
+        <img class="video_capture" alt="">
+        <img class="video_capture" alt="">
+        <img class="video_capture" alt="">
+        <img class="video_capture" alt="">
+  
+        <span id="introduce3">
+        </span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- <div class="bottom-hr">
+    </div> -->
+  
+  
+    <div class="Bottom">
+      胡杰彬的毕业设计
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+      var list = {
+        //全职高手2
+        'qzgs': {
+          'title': "全职高手2",
+          'title_msg': "2020荣耀归来！一个被原战队驱逐的顶尖职业选手——叶修，他这次和新结识的伙伴们重组战队，带着对往昔...",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img//introduced/qzgs.jpg",
+          'director': "史涓生 张盈盈",
+          'writers': "阿杰 叶清 图特哈蒙",
+          'type': "竞技 动漫 国创 ",
+          'language': "国语",
+          'time': "20分钟/20集",
+          'introduce1': "拥护国产情节的推动。拥护国产是近年来B格最高的爱国宣言，使得很多国产动漫如雨后春笋般推到观众眼前，不过被日漫养刁了胃口的观众，对于大多数的新国漫根本不买账，这就有种我想支持国产奈何国产太垃圾的想法。",
+          'introduce2': "这个时候《全职》的出现解决了这个问题，就算《全职》问题一堆，不过本着“自己家孩子只要不磕惨就是漂亮好孩子”的想法，《全职》成为了最耀眼的国产动漫之一。",
+          'introduce3': "《全职高手》在今日荣登B站追番榜榜首，截至目前，已经有310万追番，超过RE可喜可贺，可是黑与粉的战斗俨然刺刀见红。一个事物的发展必然面临批判和鼓励，正如小学课文《精彩极了与糟糕透了》，组成国漫兴起的严父和慈母。不管如何，我们必须保持谦卑的态度和客观公正的大脑，才能让国漫这只幼崽不至于胎死腹中。",
+          'video_capture': [
+            '../img/introduced/qzgs-1.jpg',
+            '../img/introduced/qzgs-2.jpg',
+            '../img/introduced/qzgs-3.jpg',
+            '../img/introduced/qzgs-4.jpg',
+            '../img/introduced/qzgs-5.jpg',
+           
+          ],
+        },
+        // 哆啦A梦
+        'Doraemon': {
+          'title': "哆啦A梦",
+          'title_msg': "哆啦A梦是一只来自未来世界的猫型机器人，用自己神奇的百宝袋和各种奇妙的道具帮助大雄解决各种困难。哆啦A梦的故事将人们带进一个奇妙、充满想像力的世界。也正因此，它能作为一个常青的形象，伴随几代少年儿童的成长。",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/introduced/D.jpg",
+          'director': "藤子·F·不二雄",
+          'writers': "哆啦A梦 大雄 静香 胖虎 小夫",
+          'type': "喜剧、科幻",
+          'language': "日语",
+          'time': "20分钟",
+          'introduce1': "《哆啦A梦》（日语：ドラえもん；英语：Doraemon；旧译叮当 / 小叮当）是日本漫画家藤本弘（笔名藤子·F·不二雄）创作的漫画。",
+          'introduce2': "漫画叙述了一只来自22世纪的猫型机器人——哆啦A梦，受主人野比世修的托付，回到20世纪，借助从四维口袋里拿出来的各种未来道具，来帮助世修的高祖父——小学生野比大雄化解身边的种种困难问题，以及生活中和妈妈野比玉子、身边的小伙伴静香、胖虎、小夫发生的轻松幽默搞笑感人的故事。",
+          'introduce3': "漫画自1970年1月开始在《小学1-4年级生》杂志中开始连载，并且大受小学生欢迎。《哆啦A梦》系列的篇幅浩繁，由原作者亲自执笔的短篇漫画共1345回（分为45卷单行本），大长篇漫画16回，《哆啦A梦Plus》6卷，在藤本弘去世后，又由其弟子创作了大量漫画，仍有新作在不断推出。",
+          'video_capture': [
+            '../img/introduced/Doraemon-1.jpg',
+            '../img/introduced/Doraemon-2.jpg',
+            '../img/introduced/Doraemon-3.jpg',
+            '../img/introduced/Doraemon-4.jpg',
+            '../img/introduced/Doraemon-5.jpg',
+          ],
+        },
+        // 名侦探柯南
+        'Conan': {
+          'title': "名侦探柯南",
+          'title_msg': "人称日本警察之救世主的高中生侦探工藤新一在与青梅竹马毛利兰去游乐园游玩时，不经意中发现了行踪可疑的黑衣人。于是工藤新一尾随跟踪，并目..",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/ke.jpg",
+          'director': "青山刚昌(原著)",
+          'writers': "梅纳·玛索德",
+          'type': "推理、恋爱喜剧",
+          'language': "日语",
+          'time': "20分钟",
+          'introduce1': "高中生侦探工藤新一和青梅竹马的同学毛利兰一同去游乐园玩的时候，目击了黑衣男子的可疑交易现场。只顾偷看交易的工藤新一，却忽略了从背后接近的另一名同伙。他被那名男子灌下了毒药，当他醒来时，身体居然缩小了！",
+          'introduce2': "如果让那些家伙知道工藤新一还活着的话，不仅性命难保，还会危及身边的人。在阿笠博士的建议下他决定隐瞒身份，在被小兰问及名字时，化名江户川柯南，为了搜集那些家伙的情报，寄住在父亲以侦探为业的小兰家中。谜团重重的黑衣组织……他所了解的，就只有他们是以酒的名称作为代号的。为了揭露那些家伙的真面目，小小侦探江户川柯南开始大显身手！",
+          'introduce3': "电视动画片《名侦探柯南》改编自青山刚昌创作的同名漫画作品  ，由TMS Entertainment（原东京电影新社）负责动画制作   ，于1996年1月8日起在读卖电视台播出  。",
+          'video_capture': [
+            '../img/introduced/Conan-1.jpg',
+            '../img/introduced/Conan-2.jpg',
+            '../img/introduced/Conan-3.jpg',
+            '../img/introduced/Conan-4.jpg',
+            '../img/introduced/Conan-5.jpg',
+            
+          ],
+        },
+        //宠物小精灵
+        'Pokemon': {
+          'title': "宠物小精灵",
+          'title_msg': "Pokémon(英文)、寶可夢(繁体中文)、精灵宝可梦(官方曾译名)、口袋妖怪(大陆曾译名)、宠物小精灵(香港曾译名)、神奇宝贝(台湾曾译名)",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/宠物小精灵.jpg",
+          'director': "田尻智、杉森建、增田顺一",
+          'writers': "首藤刚志、大桥志吉、富冈淳广 ",
+          'type': "动作 犯罪",
+          'language': "英语",
+          'time': "20分钟",
+          'introduce1': "在无印篇中，新手训练家小智从大木博士那里获得的是一只勉强又喜怒无常又不喜欢进入精灵球的皮卡丘，小智离开了家乡真新镇，在关都地区展开他的旅程。在赢得皮卡丘的信任后，小智认真地开展他的旅程来挑战各地的道馆，参加宝可梦联盟。在旅途中加入小智的是两位良师益友——小刚和小霞。",
+          'introduce2': "参加石英大会后，小智受大木博士委托启程前往橘子群岛，从内木博士那里取得GS球，小刚暂时留在内木博士那里。旅途中小智参赛橘子联盟，还遇到宝可梦观察家小建，便与他一同旅行。回到真新镇后，大木博士无法理解怎么样把GS球打开，所以就把小建留下做助手，派小智、小霞、小刚前往城都地区，把GS球交给桧皮镇的钢铁先生。后参加了宝可梦联盟－城都联盟的白银大会。",
+          'introduce3': "电视动画系列《宝可梦》（ポケットモンスター），改编自《宝可梦》系列游戏。是由汤山邦彦等执导，园田英树、大桥志吉等编剧，松本梨香、大谷育江等配音的同名长篇电视动画系列。动画的日文版根据游戏原作版本，可按照时间顺序划分为八部：《宝可梦》、《宝可梦超世代》、《宝可梦钻石&珍珠》、《宝可梦超级愿望》、《宝可梦 XY》、《宝可梦太阳&月亮》、《宝可梦旅途》和《宝可梦地平线》 [41]  。除电视动画系列外，宝可梦系列作品同样包括一些旁支作品：描述非主角一行的角色的故事的周刊宝可梦广播电台、宝可梦星期天、Pokémon Smash!等。 2019年8月1日起，宝可梦公司（总公司：东京都港区六本木；代表取缔役社长：石原恒和）将逐步变更“精灵宝可梦”的名称为“宝可梦”。同时，也制作发布了“宝可梦”的标记设计。",
+          'video_capture': [
+            '../img/introduced/Pokemon-1.jpg',
+            '../img/introduced/Pokemon-2.jpg',
+            '../img/introduced/Pokemon-3.jpg',
+            '../img/introduced/Pokemon-4.jpg',
+            '../img/introduced/Pokemon-5.jpg',
+            
+          ],
+        },
+        // 蜡笔小新
+        'CrayonShin': {
+          'title': "蜡笔小新",
+          'title_msg': "クレヨンしんちゃん（Crayon Shin-chan）”",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/蜡笔小新.jpg",
+          'director': "臼井仪人(2009年逝世)",
+          'writers': "日本双叶社",
+          'type': "生活、搞笑、校园",
+          'language': "日语",
+          'time': "20分钟",
+          'introduce1': "故事舞台是在日本埼玉县春日部市，一位正在“双叶幼稚园”学习的五岁小孩野原新之助（小新），在日常生活中发生的事，日子频繁琐碎却不乏温馨感动。起初，小新与父亲野原广志和母亲野原美冴（娘家姓：小山）组成一个3人家庭，从小房子搬入两层楼平房。随着故事发展，家中添加了一只被遗弃的小狗“野原小白（小白）”与妹妹“野原向日葵（小葵）”。车子也换了两次（前两台都是被美冴撞毁的）。家里一度因为被气爆炸毁而暂时搬入鸡飞狗跳庄（胯下痛公寓）一阵子，后来房屋修缮完毕，全家才搬回原住处。有一阵子美冴的妹妹小山梦冴因为失业暂居野原家二楼，后来搬出去住在他们曾经住过的鸡飞狗跳庄，同时剧里登场的通讯工具逐渐从最初尚未有手机的年代转变成智能手机。",
+          'introduce2': "注：早期的动画版常把“春日部市”称为“春我部市”，在漫画单行本的第16卷也曾使用过“春我”二字，现已统一称为“春日部市”。 “双叶幼稚园”也被称为“动感幼稚园”。故事主角野原新之助的汉字写法有可能是“野原新之助”或“野原信之介”。",
+          'introduce3': "1990年8月，在《weekly漫画action》上开始连载。1992年，根据漫画改编的同名动画在朝日电视台播出。2010年7月16日，臼井仪人遗作《蜡笔小新》第50卷出版。  在作者臼井仪人去世后，作品由“臼井仪人&UY工作室”沿袭原作风格继续创作。",
+          'video_capture': [
+            '../img/introduced/Shin-1.webp',
+            '../img/introduced/Shin-2.webp',
+            '../img/introduced/Shin-3.webp',
+            '../img/introduced/Shin-4.webp',
+            '../img/introduced/Shin-5.webp',
+            
+          ],
+        },
+        // 间谍过家家
+        'SPY': {
+          'title': "间谍过家家",
+          'title_msg': "“SPY×FAMILY 間諜家家酒(中国港澳台)",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/间谍过家家.jpg",
+          'director': "远藤达哉",
+          'writers': "大河内一楼",
+          'type': "喜剧、战斗、日常",
+          'language': "日语",
+          'time': "全25集",
+          'introduce1': "这是一个世界各国均暗地里进行激烈情报战的时代。东国（Ostania）与西国（Westalis）的冷战状态已经持续数十年。“黄昏”是西国情报局东国对策科“WISE”的一名优秀间谍。为调查威胁东西两国和平的人物——东国国家统一党总裁多诺万·德斯蒙，上级给予了他一个绝密任务。任务名为：“枭”（Strix）行动。",
+          'introduce2': "内容是“一周之内组建家庭，潜入德斯蒙儿子就读的名门学校的联谊会”。于是“黄昏”扮演成精神科医生劳埃德·福杰，开始组建家庭。然而，他找来的女儿阿尼亚是个能读心的超能力者，妻子约尔是个杀手。三人利害关系一致，便互相隐瞒身份，开始了共同生活。世界的和平，就掌握在这意外不断的临时一家人手中",
+          'introduce3': "电视动画片《间谍×过家家》改编自远藤达哉创作的同名漫画作品，于2021年10月31日宣布电视动画化  。该片由WIT STUDIO、CLOVERWORKS负责制作，第1单元（第1～12集）于2022年4月9日至6月25日播出  ，第2单元（第13～25集）于2022年10月1日至12月24日播出  ，全25集。第2期于2023年10月播出，动画电影《间谍×过家家 CODE: White》于2023年12月22日上映",
+          'video_capture': [
+            '../img/introduced/SPY-1.webp',
+            '../img/introduced/SPY-2.jpg',
+            '../img/introduced/SPY-3.jpg',
+            '../img/introduced/SPY-1.jpg',
+            '../img/introduced/SPY-4.jpg',
+            '../img/introduced/SPY-5.jpg',
+            
+            
+          ],
+        },
+        // 魔术师的大象
+        'Elephant': {
+          'title': "魔术师的大象",
+          'title_msg': "The Magician's Elephant",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/01.jpg",
+          'director': "温迪·罗杰斯",
+          'writers': "马丁·海內斯、凯特·迪卡米洛",
+          'type': "剧情 / 动画 / 奇幻",
+          'language': "英语",
+          'time': "99 分钟",
+          'introduce1': "影片改编自二度荣获纽伯瑞儿童文学奖的作家凯特·迪卡米洛的同名小说。彼得从未放弃寻找生死未卜的妹妹，他在市集碰见一名算命师，算命师告诉他，只要找到一头神秘的大象，以及能够变出大象的魔术师，自然就会知道妹妹的下落。",
+          'introduce2': "为了完成三项不可能的任务，彼得踏上一场曲折揪心的旅程，如果他真的成功了，影响的不只是他的人生，他所居住的小镇也将永远改变。",
+          'introduce3': "《魔术师的大象》是一部由温迪·罗杰斯执导的动画电影，讲述一个男孩和神秘的大象一起去寻找妹妹的故事，影片于2023年3月17日上线美国网络平台。",
+          'video_capture': [
+            '../img/introduced/Elephant-1.webp',
+            '../img/introduced/Elephant-2.webp',
+            '../img/introduced/Elephant-3.webp',
+            '../img/introduced/Elephant-4.webp',
+            '../img/introduced/Elephant-5.webp',
+            
+          ],
+        },
+        // 疾速追杀4 John Wick: Chapter 4
+        'Chapter': {
+          'title': "疾速追杀4 John Wick: Chapter 4 ",
+          'title_msg': "该片讲述了杀手约翰·威克找到了击败高桌会的方法，并继续与其对抗的故事",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/02.jpg",
+          'director': "查德·斯塔尔斯基",
+          'writers': "德里克·科尔斯塔、Michael Finch、谢伊·哈滕",
+          'type': "运动、惊悚、犯罪",
+          'language': "英语",
+          'time': "169 分钟",
+          'introduce1': "高桌组织的首席执行官格拉蒙特（比尔·斯卡斯加德饰）不断提高对约翰·威克（基努·里维斯饰）的赏金，同时清理其在这个邪恶组织中的痕迹。巨额赏金的诱惑下，吸引来了潜在的赏金猎人对威克的追杀。被逐出高桌会的威克在与高桌会的对抗过程中找到了击败高桌会的方法，在朋友的帮助下，开始了自己的反击",
+          'introduce2': "",
+          'introduce3': "《疾速追杀4》是由查德·斯塔尔斯基执导，基努·里维斯、比尔·斯卡斯加德、甄子丹主演的动作惊悚片，于2023年的3月24日在美国上映",
+          'video_capture': [
+            '../img/introduced/Chapter-1.webp',
+            '../img/introduced/Chapter-2.webp',
+            '../img/introduced/Chapter-3.webp',
+            '../img/introduced/Chapter-4.webp',
+            '../img/introduced/Chapter-5.webp',
+            
+          ],
+        },
+        // 中国乒乓之绝地反击
+        'PingPong': {
+          'title': "中国乒乓之绝地反击",
+          'title_msg': "该片讲述了1992年至1995年期间，戴敏佳从国外回来担任主帅决心有一番作为，龚枫、白民和、黄昭、侯卓翔、董帅五名运动员在戴敏佳的带领下，在天津世锦赛绝地反击的故事",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/03.jpg",
+          'director': "邓超 、俞白眉",
+          'writers': "俞白眉 、孟晖",
+          'type': "体育、运动",
+          'language': "国语",
+          'time': "137 分钟",
+          'introduce1': "20世纪90年代初，中国男乒屡败欧洲劲敌瑞典男团，连续三届世乒赛与男团冠军无缘，跌入谷底。以戴敏佳（邓超饰）为首的新教练班子临危受命，对中国男乒展开全方位改造，目标在1995年天津世乒赛重新向冠军发起冲击。",
+          'introduce2': "戴敏佳在新一届国家乒乓男队主教练选拔会上立下豪言壮语：“两年，不需要十年，也不是过渡，我相信我们两年后能夺回斯韦思林杯。”不仅新帅饱受争议，国乒男队新五虎亦被冠以“残兵败将”的称呼——受伤的白民和（许魏洲饰），眼睛高度近视的龚枫（蔡宜达饰），年龄小的侯卓翔（丁冠森饰）和董帅（孙浠伦饰）、年纪偏大的黄昭（段博文饰）。在戴敏佳的排兵布阵下，一个不被看好的队伍就这样组成了。而等待他们的，则是用两年时间，来实现这个遥不可及的誓言，他们在戴敏佳的带领下打出翻身仗",
+          'introduce3': "《中国乒乓之绝地反击》是由恒业影业出品，邓超、俞白眉联合执导  ，俞白眉、孟晖编剧，邓超、孙俪、许魏洲、段博文、蔡宜达、丁冠森、孙浠伦领衔主演的体育题材电影  ，于2023年1月14日（大年初三）在中国大陆上映，后于2月14日点映，并于2月17日再度大规模上映",
+          'video_capture': [
+            '../img/introduced/pingpong-1.webp',
+            '../img/introduced/pingpong-2.webp',
+            '../img/introduced/pingpong-3.webp',
+            '../img/introduced/pingpong-4.webp',
+            '../img/introduced/pingpong-5.webp',
+            
+          ],
+        },
+        // 名侦探柯南：万圣节的新娘
+        'kenan': {
+          'title': "名侦探柯南：万圣节的新娘",
+          'title_msg': "　 名侦探柯南剧场版25 / Detective Conan: The Bride of Halloween",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/04.jpg",
+          'director': "：满仲劝",
+          'writers': "大仓崇裕",
+          'type': "动作 / 动画 / 悬疑,",
+          'language': "日语",
+          'time': "108分钟",
+          'introduce1': "于万圣季热闹非凡的东京涩谷。在涩谷Hikarie举行了一场婚礼。出现在那里的，是身着婚纱一副新娘模样的警视厅佐藤刑警。在柯南等众多来宾的注视下，突然闯入的歹徒向她袭击而来，试图保护她的高木刑警受伤了。高木保住一命，事态得以平息，但在佐藤的眼中，3年前的连续爆炸案中，在曾爱慕的松田刑警殉职的时候她所看到的死神形象，却与高木的身影重叠",
+          'introduce2': "同时，那起连续爆炸案的犯人越狱了。这究竟是否为偶然？公安警察降谷零（安室透）去追查葬送了同期的松田刑警性命的宿命之敌，却被出现在那里的神秘化装人物戴上了项圈炸弹。为了拆除项圈炸弹而来到安室潜伏的地下掩体的柯南，听说了安室现在已故的警察学校时期同期成员们在3年前和真身不明的化装爆炸犯“普拉米亚”在涩谷遭遇的案件。不久，出现了以推进调查的柯南等人为目标的可疑身影。被点燃的命运的全向十字路口。现在，庆典中的万圣夜正演变为狂乱的夜行！",
+          'introduce3': "《名侦探柯南 万圣节的新娘》是《名侦探柯南》电影版的第25部作品  ，由满仲劝执导，大仓崇裕负责编剧   ，于2022年4月15日在日本上映   ，并于同年6月30日在中国台湾地区 、7月28日在中国港澳  、11月18日在中国内地上映  。作品的舞台是在万圣夜热闹非凡的东京涩谷",
+          'video_capture': [
+            '../img/introduced/kenan-1.webp',
+            '../img/introduced/kenan-2.webp',
+            '../img/introduced/kenan-3.webp',
+            '../img/introduced/kenan-4.webp',
+            '../img/introduced/kenan-5.webp',
+           
+          ],
+        },
+        // 航海王：红发歌姬
+        'hzw': {
+          'title': "航海王：红发歌姬 ",
+          'title_msg': "航海王：红 / 海贼王：红 / 海贼王剧场版15 / 航海王剧场版：红发歌姬(台) / 海贼王2022 / 航海王剧场版15 / 航海王2022",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/05.jpg",
+          'director': " 谷口悟朗",
+          'writers': "黑岩勉",
+          'type': "冒险、动作、奇幻、音乐",
+          'language': "日语",
+          'time': "115分钟",
+          'introduce1': "令全世界为之疯狂的歌姬·乌塔。她的身世成谜，歌声却被誉为“来自别的次元”。而这次，她将举办演唱会并第一次露出庐山真面目。为了欣赏她的歌声，路飞率领的草帽一伙，以及各路海盗、海军、世界各地的歌迷都汇聚在会场之中。全世界备受瞩目的歌声即将在此回荡。而故事就在乌塔是“杰克斯的女儿”这一令人震惊的发现中拉开帷幕",
+          'introduce2': "",
+          'introduce3': "《航海王：红发歌姬》是《航海王》系列的第15部剧场版，也是原作连载25周年的纪念之作。该片讲述了路飞率领的草帽一伙与世界各地的歌迷齐聚一堂，只为一睹世界歌姬·乌塔的芳容，欣赏她的歌声，而路飞等人却发现她竟是红发杰克斯的女儿的故事",
+          'video_capture': [
+            '../img/introduced/hzw-1.webp',
+            '../img/introduced/hzw-2.webp',
+            '../img/introduced/hzw-3.webp',
+            '../img/introduced/hzw-4.webp',
+            '../img/introduced/hzw-5.webp',
+            
+          ],
+        },
+
+         //阿凡达：水之道
+         'Avatar': {
+          'title': "阿凡达：水之道 ",
+          'title_msg': "浪尖上的约定(港) / 乘浪之约(台) / 若能与你乘风破浪 / 若能和你共乘波浪 / 若能与你共乘波浪 / 若与你共乘海浪之上 / 你和我，如果被海浪吞没 / If Riding a Wave, with You / Ride Your Wave",
+          'video_url': "../src/video/1.mp4",
+          'posters': "../img/电影/06.jpg",
+          'director': " 詹姆斯·卡梅隆 ",
+          'writers': " 詹姆斯·卡梅隆  里克·杰法",
+          'type': "动作 / 科幻 / 冒险",
+          'language': "英语",
+          'time': "193分钟",
+          'introduce1': "影片设定在《阿凡达》的剧情落幕十余年后，讲述了萨利一家（杰克、奈蒂莉和孩子们）的故事：危机未曾消散，一家人拼尽全力彼此守护、奋力求生，并历经艰险磨难。",
+          'introduce2': "杰克和奈蒂莉组建了家庭，他们的孩子也逐渐成长，为这个家庭带来了许多欢乐。然而危机未曾消散，萨利一家拼尽全力彼此守护、奋力求生，最终来到潘多拉星球临海的岛礁族寻求庇护。岛礁族首领特诺瓦里与罗娜尔为萨利一家提供了庇护所，这个部族的成员都是天生的潜水好手，也和海洋中的各种生物建立了密切联系",
+          'introduce3': "该片讲述了杰克和妮特丽组建了家庭，他们的孩子也逐渐成长，为这个家庭带来了许多欢乐。然而危机未曾消散，萨利一家拼尽全力彼此守护、奋力求生，最终来到潘多拉星球临海的岛礁族寻求庇护的故事",
+          'video_capture': [
+            '../img/introduced/Avatar-1.webp',
+            '../img/introduced/Avatar-2.webp',
+            '../img/introduced/Avatar-3.webp',
+            '../img/introduced/Avatar-4.webp',
+            '../img/introduced/Avatar-5.webp',
+            
+          ],
+        },
+        // 敢梦有爱 gmya
+      'gmya': {
+        'title': "敢梦有爱 The Secret: Dare to Dream ",
+        'title_msg': "改编自全球畅销励志作品《秘密》。故事描述独自扶养三个孩子的寡妇米兰达（凯蒂荷姆丝 饰）在一场风暴过后，雇用了一名水电工布雷（乔许卢卡斯 饰）修缮受损的住家",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/introduced//gmya0.webp",
+        'director': "安迪·坦纳特",
+        'writers': "纳塔利·克林斯基",
+        'type': "爱情",
+        'language': "英语",
+        'time': "108分钟",
+        'introduce1': "“詹姆斯·邦德系列电影”的第二十五部电影，由凯瑞·福永执导。电影主演包括丹尼尔·克雷格、拉尔夫·费因斯、娜奥米·哈里斯、雷米·马利克、蕾雅·赛杜、本·威士肖和杰佛瑞·怀特。",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/gmya1.webp',
+          '../img/introduced/gmya2.webp',
+          '../img/introduced/gmya3.jpg',
+          '../img/introduced/gmya4.jpg',
+          '../img/introduced/gmya5.jpg',
+        ],
+      },
+        //斗罗大陆
+      'dldl': {
+        'title': "斗罗大陆",
+        'title_msg': "网络动画《斗罗大陆》改编自中国作家唐家三少原作的同名玄幻小说  ，由企鹅影视、玄机科技联合出品。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/01.jpg",
+        'director': "唐家三少",
+        'writers': "毛天耘、杨伟典",
+        'type': "小说改、玄幻、穿越、热血、战斗、爱情",
+        'language': "国语",
+        'time': "每集20分钟，正片15分钟",
+        'introduce1': "唐门外门弟子唐三，因偷学内门绝学为唐门所不容，跳崖明志时却发现没有死，反而以另外一个身份来到了另一个世界，一个属于武魂的世界，名叫斗罗大陆。这里没有魔法，没有斗气，没有武术，却有神奇的武魂。这里的每个人，在自己六岁的时候，都会在武魂殿中令武魂觉醒。武魂有动物，有植物，有器物，武魂可以辅助人们的日常生活。而其中一些特别出色的武魂却可以用来修炼并进行战斗，这个职业，是斗罗大陆上最为强大也是最荣耀的职业“魂师”。",
+        'introduce2': "小小的唐三在圣魂村开始了他的魂师修炼之路，并萌生了振兴唐门的梦想。当唐门暗器来到斗罗大陆，当唐三武魂觉醒，他能否在这片武魂的世界再铸唐门的辉煌……",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/dldl-01.webp',
+          '../img/introduced/dldl-02.webp',
+          '../img/introduced/dldl-03.webp',
+          '../img/introduced/dldl-04.webp',
+          '../img/introduced/dldl-05.webp',
+          
+        ],
+      },
+        //斗破苍穹
+        'dpcq': {
+        'title': "斗破苍穹",
+        'title_msg': "该剧根据天蚕土豆同名小说改编，讲述了少年萧炎在创造了家族修炼纪录后却接受了种种打击，在经过药老的悉心教导后，联手萧薰儿共同战胜强敌的故事。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/03.jpg",
+        'director': "天蚕土豆",
+        'writers': "金增辉、李欣雨",
+        'type': "小说改、玄幻、热血",
+        'language': "国语",
+        'time': "20分钟",
+        'introduce1': "三年之约后，萧炎终于在迦南学院见到了薰儿，此后他广交挚友并成立磐门；为继续提升实力以三上云岚宗为父复仇，他以身犯险深入天焚炼气塔吞噬陨落心炎……",
+        'introduce2': "讲述了萧炎回到迦南学院继续历练的故事。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/dpcq01.webp',
+          '../img/introduced/dpcq02.webp',
+          '../img/introduced/dpcq03.webp',
+          '../img/introduced/dpcq04.webp',
+          '../img/introduced/dpcq05.webp',
+          
+        ],
+      },
+        //凡人修仙传
+        'frxxz': {
+        'title': "凡人修仙传",
+        'title_msg': "《凡人修仙传》是改编自忘语创作的同名小说，由哔哩哔哩，万维猫动画，原力动画，金色世纪文化传媒无锡有限公司联合出品制作的系列奇幻动画作品。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/06.jpg",
+        'director': "忘语",
+        'writers': "顾振华",
+        'type': "古装、青春、励志、武侠",
+        'language': "国语",
+        'time': "52集",
+        'introduce1': "平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入门的弟子张铁失踪，韩立才发现了墨大夫的真面目。墨大夫试图夺舍韩立，最终却被韩立反杀。通过墨大夫的遗书韩立得知了一个全新世界:修仙界的存在。",
+        'introduce2': "在帮助七玄门抵御外敌之后，韩立离开了七玄门，前去墨大夫的家中寻找暖阳宝玉解毒，并帮助墨家人打败了敌人。通过墨大夫之女墨彩环的口中得知太南小会地址，韩立为追寻修仙人的足迹决定前往太南小会，拜别家人后，韩立来到太南谷，结识了一众修仙人士，正式展开了自己的修仙之旅。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/fr01.webp',
+          '../img/introduced/fr02.webp',
+          '../img/introduced/fr03.webp',
+          '../img/introduced/fr04.webp',
+          
+          
+        ],
+      },
+      //吞噬星空
+      'tsxk': {
+        'title': "吞噬星空",
+        'title_msg': "网络动画片《吞噬星空》，是由上海腾讯企鹅影视文化传播有限公司出品，杭州玄机科技信息技术有限公司负责制作的科幻作品。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/04.jpg",
+        'director': "沈乐平",
+        'writers': "沈欢愉、石海燕",
+        'type': "小说改、玄幻、热血",
+        'language': "国语",
+        'time': "78 集",
+        'introduce1': "某一天，地球上出现了不明来由的RR病毒，将世界卷入灾难之中。受到感染的动物变异成为可怕的怪兽，大举入侵，人类面临毁灭之际筑起了围墙，成立基地市作为人类最后的堡垒。人类在这一段时间经历的磨难，被称为“大涅槃时期”。在极端的生存环境下，人类的体能也在逐渐地进步发展，尚武之风兴起，人类的身体素质相比以前有了质的飞越。而这其中的佼佼者，被称为“武者”。",
+        'introduce2': "18岁的罗峰也梦想着成为其中的一员。此时的他即将高考，正面临着人生十字路口的抉择，却不料怪兽的一次袭击影响了他的人生轨迹。在强大怪兽的威胁之下，市内居民面临危险，军方却束手无策。唯有一名武者挺身而出，保卫了基地市的安全。罗峰被武者的强大所感染，暗自立下成为武者以保护所爱之人的决心。这是一切的开始，罗峰武者之路的起点，也拉开了他传奇人生的序幕。",
+        'introduce3': "罗峰立志成为武者，前路却并不平坦，他首先要面对的便是外部环境无形中对他施加的影响。罗峰家庭条件不佳，生活拮据，父母无法给予他更多帮助，只能依靠自己的努力。最终，在不断的艰苦磨砺下，罗峰不断发掘自身潜能，得到了能力提升和自我价值的认可。不仅如此，罗峰不仅扛起了供养家庭的重担，还为了守护人类家园、为了人类更好的生存与发展，与其他正义的武者们一起，联手对付凶恶怪兽。在末日绝境之下，罗峰与其他武者们能否击退怪兽、成功守护人类世界?",
+        'video_capture': [
+          '../img/introduced/ts01.webp',
+          '../img/introduced/ts02.webp',
+          '../img/introduced/ts03.webp',
+          '../img/introduced/ts04.webp',
+          '../img/introduced/ts05.webp',
+          
+          
+        ],
+      },
+      //三体
+      'st': {
+        'title': "三体",
+        'title_msg': "网络动画片《三体》改编自刘慈欣创作的同名科幻小说，是bilibili、三体宇宙和艺画开天联合出品的动画，2022年完成制作并在bilibili上线。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/07.jpg",
+        'director': "刘慈欣",
+        'writers': "林铭浩",
+        'type': "科幻",
+        'language': "国语",
+        'time': "20分钟",
+        'introduce1': "《三体》动画主要展现的，是原著第二部《黑暗森林》的故事。动画第一集直接把剧情跳到了原作第一部结尾的“古筝计划”，然后第二集紧接第二部的主线剧情，快进至人类臣服于智子的封锁，罗辑出场成为“面壁者”。",
+        'introduce2': "无数细线横亘在星空之中，如同一把巨大的刷子。三体星舰队于400年后抵达。遥远蝴蝶扇动着翅膀，也改变了罗辑的命运，轰然打开的门后是世界中心--面壁计划开启。同时，智子所创建的破壁室内，破壁人一一就位……",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/st01.webp',
+          '../img/introduced/st02.webp',
+          '../img/introduced/st03.webp',
+          '../img/introduced/st04.webp',
+          
+          
+          
+          
+        ],
+      },
+      //完美世界
+      'wmsj': {
+        'title': "完美世界",
+        'title_msg': "网络动画片《完美世界》改编自辰东的同名网络小说作品，由企鹅影视负责出品，福煦影视负责动画制作，于2021年4月23日起在腾讯视频独家播出，全130集。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/anima/02.jpg",
+        'director': "辰东",
+        'writers': "袁洁",
+        'type': "小说改、玄幻、热血",
+        'language': "国语",
+        'time': "130 集",
+        'introduce1': "他为修道而生，为应劫而至，他身化亿万血雨，洒落万古岁月，经历无数时空的熬炼，岁月长河的洗礼，他化万古，他化自在。看男主石昊如何一生极致辉煌，造就无尽传说。",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/wm01.webp',
+          '../img/introduced/wm02.webp',
+          '../img/introduced/wm03.webp',
+          '../img/introduced/wm04.webp',
+          
+        ],
+      },
+        //西游记
+      'xyj': {
+        'title': "西游记",
+        'title_msg':" 本剧讲述的是孙悟空、猪八戒、沙僧辅保大唐高僧玄奘去西天取经，师徒四人一路抢滩涉险，降妖伏怪，历经八十一难，取回真经，终成正果的故事。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/01.jpg",
+        'director': "杨洁",
+        'writers': "戴英禄、杨洁、邹忆青",
+        'type': "剧情、古装、奇幻、冒险",
+        'language': "国语",
+        'time': "130 集",
+        'introduce1': "在遥远的古代，东方傲来国有一座花果山，山上有一块仙石吸收天地精华，内育仙胞，一日迸裂，响震天宇产一个石猴。并因石猴引进之功，拜石猴为王，称他为美猴王。玉帝传旨处死孙悟空，但一时间无人可敌。玉帝束手无策，求助西天如来佛祖。孙悟空终究敌不过佛法无边的如来，一路筋斗云却翻不出佛掌。如来将孙悟空压在五行山下，孙悟空苦度了500年。",
+        'introduce2': "五百年后，正是大唐太宗李世民时期。高僧玄奘得观音菩萨开导之后，决定前往西天求取大乘佛法真经，唐僧上路，救孙悟空崩山而出，并收悟空为徒，称为孙行者，一同西行取经。先后收了猪悟能、沙悟净、白龙马为座下弟子，前往西天拜佛求经。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/xyj01.webp',
+          '../img/introduced/xyj02.webp',
+          '../img/introduced/xyj03.webp',
+          '../img/introduced/xyj04.webp',
+          '../img/introduced/xyj05.jpg',
+         
+          
+        ],
+      },
+ //西游记
+      'xyj': {
+        'title': "西游记",
+        'title_msg':" 本剧讲述的是孙悟空、猪八戒、沙僧辅保大唐高僧玄奘去西天取经，师徒四人一路抢滩涉险，降妖伏怪，历经八十一难，取回真经，终成正果的故事。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/01.jpg",
+        'director': "杨洁",
+        'writers': "戴英禄、杨洁、邹忆青",
+        'type': "剧情、古装、奇幻、冒险",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "在遥远的古代，东方傲来国有一座花果山，山上有一块仙石吸收天地精华，内育仙胞，一日迸裂，响震天宇产一个石猴。并因石猴引进之功，拜石猴为王，称他为美猴王。玉帝传旨处死孙悟空，但一时间无人可敌。玉帝束手无策，求助西天如来佛祖。孙悟空终究敌不过佛法无边的如来，一路筋斗云却翻不出佛掌。如来将孙悟空压在五行山下，孙悟空苦度了500年。",
+        'introduce2': "五百年后，正是大唐太宗李世民时期。高僧玄奘得观音菩萨开导之后，决定前往西天求取大乘佛法真经，唐僧上路，救孙悟空崩山而出，并收悟空为徒，称为孙行者，一同西行取经。先后收了猪悟能、沙悟净、白龙马为座下弟子，前往西天拜佛求经。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/xyj01.webp',
+          '../img/introduced/xyj02.webp',
+          '../img/introduced/xyj03.webp',
+          '../img/introduced/xyj04.webp',
+          '../img/introduced/xyj05.jpg',
+         
+          
+        ],
+      },
+         //大明王朝
+      'dmwc': {
+        'title': "大明王朝",
+        'title_msg':" 《大明王朝1566嘉靖与海瑞》是由张黎执导，陈宝国、黄志忠、王庆祥、倪大红等主演的历史题材电视剧，本剧讲述的是嘉靖与海瑞的故事。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/02.jpg",
+        'director': "张黎",
+        'writers': "刘和平",
+        'type': "历史",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "明嘉靖年间，中国封建历史上最为独特的皇帝朱厚熜出现了。他二十多年避居西苑，练道修玄，却始终牢牢掌控着整个大明朝政治、财经、军事和民生大权。严嵩，明朝历史上唯一一个二十年把持内阁的首辅，明史将其定为奸臣之首。他党羽密布，权倾朝野，在家产被抄没、儿子被砍头之后，无家可归。两年后病卒，终年八十七岁。他死的时候，寄食于墓舍，既无棺木下葬，更没有前去吊唁的人。",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/dm01.webp',
+          '../img/introduced/dm02.webp',
+          '../img/introduced/dm03.webp',
+          '../img/introduced/dm04.webp',
+          '../img/introduced/dm05.webp',
+          
+         
+          
+        ],
+      },
+         //三国演义
+      'sgyy': {
+        'title': "三国演义",
+        'title_msg':"《 三国演义》是由中国电视剧制作中心、中国中央电视台制作的84集电视连续剧，改编自中国明朝罗贯中同名文学名著《三国演义》。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/03.jpg",
+        'director': "王扶林、蔡晓晴",
+        'writers': "杜家福、朱晓平",
+        'type': "古装片、历史、战争、剧情",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "东汉末年，山河动荡，刘汉王朝气数将尽。内有十常侍颠倒黑白，祸乱朝纲；外有张氏兄弟高呼：“苍天已死，黄天当立。”的口号，(原著为：“苍天已死，黄天当立。岁在甲子，天下大吉。”)，掀起浩大的农民起义。一时间狼烟四起，战火熊熊，刘家的朝廷宛如大厦将倾，岌岌可危。",
+        'introduce2': "正所谓：乱世出英雄，曹操、公孙瓒、袁术、袁绍、吕布、刘备、孙策、关羽、张飞、诸葛亮等各路豪杰不断涌现，从群雄逐鹿到赤壁之战，从魏、蜀、吴三国鼎立到三分归一统，波澜壮阔的三国时代的大幕缓缓拉开……",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/sg01.webp',
+          '../img/introduced/sg02.webp',
+          '../img/introduced/sg03.webp',
+          '../img/introduced/sg04.webp',
+          '../img/introduced/sg05.webp',
+          
+         
+          
+        ],
+      },
+         //陈情令
+      'cql': {
+        'title': "陈情令",
+        'title_msg':"《陈情令》是由郑伟文、陈家霖联合执导，肖战、王一博、孟子义、宣璐、汪卓成、于斌、刘海宽，朱赞锦，王皓轩主演，李若彤、陆剑民、黄子腾、修庆特别出演，沈晓海友情客串的古装仙侠剧。",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/04.jpg",
+        'director': "郑伟文、陈家霖",
+        'writers': "方芳",
+        'type': "古装、权谋、仙侠",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "十六年前，天下五分，姑苏蓝氏，云梦江氏，清河聂氏，岐山温氏，兰陵金氏共治天下。温氏一家独大，其余四家均受其苦。众家青年中，江氏故人之子魏无羡性格开朗，和以雅正闻名的姑苏蓝氏弟子蓝忘机相识并引为知己。一次偶然的机会，二人发现了蓝氏一直以来守护的秘密，二人继承遗志，为苍生消除隐患。但没想到一切的幕后黑手正是温氏家主温若寒。众家不堪其辱，合力讨伐温氏。温氏覆灭后，魏无羡却为保护温氏无辜之人不惜与众家对立，最终被奸人所害酿成大祸，误害师姐江厌离，自己也跳崖寻死。",
+        'introduce2': "十六年后，魏无羡以莫玄羽身份在莫家庄出现，偶遇故人蓝忘机。莫家庄一桩桩诡异的凶案显得扑朔迷离。随着真相一步步揭开，身处幕后的金光瑶渐渐难以隐藏。最后金光瑶身死，蓝忘机承担起了匡扶天下的使命，而魏无羡不忘初心，最终潇洒世间。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/cq01.webp',
+          '../img/introduced/cq02.webp',
+          '../img/introduced/cq03.webp',
+          '../img/introduced/cq04.webp',
+          
+          
+         
+          
+        ],
+      },
+         //隐秘的角落
+      'ymdjl': {
+        'title': "隐秘的角落",
+        'title_msg':"该剧改编自紫金陈的推理小说《坏小孩》  ，主要讲述沿海小城的三个孩子在景区游玩时无意拍摄记录了一次谋杀由此展开冒险的故事 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/05.jpg",
+        'director': "辛爽",
+        'writers': "胡坤、潘依然、孙浩洋",
+        'type': "剧情 悬疑",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "朱朝阳（荣梓杉饰）是学霸，考试成绩回回第一，但性格较为内向，不擅长与同学交流，所以同学们大都不很喜欢他，在学校中还遭到同学欺负。严良（史彭元饰）带着女孩普普（王圣迪饰）从福利院中逃离，希望找人借30万救急，因为普普家里有事。警察老陈（王景春饰）得知严良离开福利院欲找到严良将其送回。严良找到他最好的朋友朱朝阳，朱朝阳因为他的妈妈不在家，就收留了他们一晚。",
+        'introduce2': "张东升（秦昊饰）在少年宫当数学老师，八年前，他为了他妻子背井离乡。如今，他妻子却想和他离婚，他苦苦挽留，妻子无动于衷。张东升的岳父岳母也不喜欢他，在妻子表姐的聚会上，有人说起六峰山，景色不错，张东升岳父岳母意欲前往，张东升主动提出带岳父岳母前去。张东升在爬山时借口拍照，亲手将岳父母推下山崖，恰好这一幕被去景区游玩的三个小孩无意中录下来了，他们的冒险也由此展开。几个家庭被裹挟其中，带向不可预知的未来",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/ym01.webp',
+          '../img/introduced/ym02.webp',
+          '../img/introduced/ym03.webp',
+          '../img/introduced/ym04.webp',
+          '../img/introduced/ym05.webp',
+          
+          
+         
+          
+        ],
+      },
+         //开端
+      'kd': {
+        'title': "开端",
+        'title_msg':"该剧改编自祈祷君的同名小说，讲述了游戏架构师“肖鹤云”和在校大学生“李诗情”遭遇公交车爆炸后死而复生，在时间循环中并肩作战，努力阻止爆炸、寻找真相的故事 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/07.jpg",
+        'director': "孙墨龙 、刘洪源、算",
+        'writers': "祈祷君 、邱玉洁 、算",
+        'type': "时间循环",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "李诗情（赵今麦饰）梦见她乘坐的45路公交车，在走向跨江大桥时爆炸了，她也因为爆炸被吓醒。醒来后她发现公交车上的经历居然和梦境一模一样，在多次努力尝试阻止爆炸未果后，确信自己进入了时间循环。与此同时，第六次时间循环时被强行拽下车的肖鹤云（白敬亭饰）也和李诗情一起进入了循环。",
+        'introduce2': "两个普通的年轻人在一次又一次的循环中，经历了生死挑战，实现了自我成长，也了解到了45路公交车上身份各异的乘客们背后的故事。最终在二人和警方的共同努力下，终于寻找到了爆炸的真相。正义终会来临，正如俩人名字所预示的那般，迎来“晴空一鹤排云上，便引诗情到碧霄”的清朗开阔",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/kd01.webp',
+          '../img/introduced/kd02.webp',
+          '../img/introduced/kd03.webp',
+          '../img/introduced/kd04.webp',
+         
+        ],
+      },
+         //沉默的真相
+      'cmdzx': {
+        'title': "沉默的真相",
+        'title_msg':"该剧根据紫金陈的小说《长夜难明》改编，讲述了检察官江阳历经多年，付出无数代价查清案件真相的故事，于2020年9月16日在爱奇艺“迷雾剧场”播出 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/06.jpg",
+        'director': "陈奕甫",
+        'writers': "刘国庆、紫金陈",
+        'type': "现代、犯罪、悬疑",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "一起看似简单的自杀案，背后隐藏着一个不可告人的巨大秘密，为了揭开这个秘密，一群人历经七载，付出无数代价，甚至赌上性命。一个曾有大好前途，四平八稳的检察官江阳，但因受贿贪污，坐牢三年，再次出现公众视野里竟是他在行李箱里的蜷缩的尸体，运送他尸体的是当地著名律师张超。此案引发全市关注，刑警严良介入负责此案，与张超正面交锋。张超承认犯罪，却在接受法院宣判时当场翻供，并拿出不在场证据，案件陷入死局",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/cm01.webp',
+          '../img/introduced/cm02.webp',
+          '../img/introduced/cm03.webp',
+          '../img/introduced/cm04.webp',
+         
+        ],
+      },
+         //狂飙
+      'kb': {
+        'title': "狂飙",
+        'title_msg':"该剧讲述了以一线刑警安欣为代表的正义力量，与黑恶势力展开的长达二十年的生死搏斗故事，通过群像叙事，展现扫黑行动中的黑白较量和复杂人性 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/TV/08.jpg",
+        'director': "徐纪周",
+        'writers': "朱俊懿 (总编剧)、徐纪周 (总编剧)",
+        'type': "反黑、刑侦",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "2000年，意气风发的刑警安欣（张译饰）与倍受欺负的鱼贩子高启强（张颂文饰）相识，而后随着高启强逐渐偏离正途，安欣意识到在京海市社会发展的背后正是以高家兄弟为首的黑恶势力暗流汹涌，两人分道扬镳并展开了长达20年的正邪较量 。",
+        'introduce2': "2021年，在全国开展扫黑除恶常态化的背景下，中央督导组雷霆出击，安欣协同专案组彻查强盛集团犯罪团伙及其背后的保护伞，最终京海市得以拨云见日清风正气",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/kb01.webp',
+          '../img/introduced/kb02.webp',
+          '../img/introduced/kb03.webp',
+          '../img/introduced/kb04.webp',
+          '../img/introduced/kb05.webp',
+          
+        ],
+      },
+         //一年一度喜剧大赛第二季
+      'ynyd': {
+        'title': "一年一度喜剧大赛第二季",
+        'title_msg':"节目将素描喜剧、漫才、独角戏、音乐喜剧等多元类型的喜剧展现在大众面前，同时为优质喜剧人提供展现自己的平台 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/05.jpg",
+        'director': "马东",
+        'writers': "黄渤、李诞、于和伟",
+        'type': "综艺",
+        'language': "国语",
+        'time': "110 分钟",
+        'introduce1': "2014年，牟頔曾参与制作一档名为《喜乐街》的喜剧真人秀。节目引进自海外，率先将即兴喜剧这一当时对中国国内观众还相对陌生的喜剧类型，引入到了中国。也正是这次经历，让牟頔和团队接触到海外节目制作理念的同时，了解到即兴喜剧的创作方法。自此，这档节目也在心里埋下一颗制作喜剧节目的种子。随后邀请即兴喜剧的前辈为米未创作者培训和自己在斯坦福大学的一段拜访经历，更让牟頔感受到即兴喜剧的力量。2021年，米未站上了向左走向右走的十字路口。是延续爆款音乐综艺《乐队的夏天》这张“王牌”，还是从零开始闯出新喜剧的一片天，团队分成了两派，牟頔力主后者，并最终推出《一年一度喜剧大赛》",
+        'introduce2': "《一年一度喜剧大赛》是一档原创喜剧竞演综艺，网罗素描喜剧、漫才、音乐剧、默剧等多种形式，让更多类型的喜剧走进大众视线，为新喜剧演员提供展现自己的机会。该节目第一季由马东担任组委会秘书长，黄渤、李诞、徐峥、于和伟担任组委会会长，于2021年10月15日开播，于和伟带领的喜剧社团“三板大斧子”成为年度喜剧社团；蒋龙、张弛的“逐梦亚军”组合获得年度喜剧搭档冠军",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/yn01.webp',
+          '../img/introduced/yn02.webp',
+          '../img/introduced/yn03.webp',
+          '../img/introduced/yn04.webp',
+          
+        ],
+      },
+         //脱口秀大会第5季
+      'tkxdh': {
+        'title': "脱口秀大会第5季",
+        'title_msg':"节目在升级的天花板舞台经过数轮竞演决出脱口秀大王，向观众传递“每个人都能快乐5分钟”的节目理念。 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/04.jpg",
+        'director': "孙忠怀、叶烽东",
+        'writers': "王娟",
+        'type': "脱口秀竞技节目",
+        'language': "国语",
+        'time': "120 分钟",
+        'introduce1': "节目模式:从选手风格、形式和表现上来说，《脱口秀大会第五季》还是在走向成熟，one-liner更加顺畅、漫才被接受的程度也在提高，另外，越来越多脱口秀“老将”找到了适应线上演出的自身节奏，“咆哮派”、“表演派”、“丧系”，在这批人更注重文本的情况之下，意想不到的效应在节目上诞生。《脱口秀大会第五季》在赛制方面也做了升级，增设了“天花板”舞台。",
+        'introduce2': "节目特色:节目议题依旧保持多元化和延展性，各行各业、不同年龄层的演员们将以他们的内容，持续制造出更多共鸣点和新鲜热梗.从阵容来看，新人演员在原生行业与年龄层的构成上更为多元，如魔术师邓男子、前亚丁湾护航员毛豆、年近60的前篮球运动员黄大妈、因送外卖入行的南瓜、“线下女王”小鹿、“头部up主”拉宏等。新血液表现值得期许，成熟脱口秀演员同样让人饱含期待。",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/tkx01.webp',
+          '../img/introduced/tkx02.webp',
+          '../img/introduced/tkx03.webp',
+          '../img/introduced/tkx04.webp',
+         
+          
+        ],
+      },
+         //披荆斩棘第2季
+      'pjzj': {
+        'title': "披荆斩棘第2季",
+        'title_msg':"Call Me by Fire 2",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/02.jpg",
+        'director': "吴梦知、李娜",
+        'writers': "蔡怀军",
+        'type': "全景音乐竞演综艺",
+        'language': "国语",
+        'time': "120 分钟",
+        'introduce1': "节目邀请各个领域的文艺工作者，用匠心和敬业态度，挑战不同风格的音乐、表演形式；用对舞台的敬畏和精益求精的拼搏，突破自我，拓展边界；邀请时代英雄，讲述滚烫故事，致敬滚烫时刻。进一步阐明、讲透奋斗精神新的时代内涵，致敬全社会全行业的奋斗榜样，探索人生可能性的热望，彰显和弘扬锐意进取、奋发向上的时代精神",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/pj01.webp',
+          '../img/introduced/pj02.webp',
+          '../img/introduced/pj03.webp',
+          '../img/introduced/pj04.webp',
+          
+        ],
+      },
+         //开心无敌掌门人
+      'kxwdzmr': {
+        'title': "开心无敌掌门人",
+        'title_msg':"节目将素描喜剧、漫才、独角戏、音乐喜剧等多元类型的喜剧展现在大众面前，同时为优质喜剧人提供展现自己的平台 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/01.jpg",
+        'director': "卫世辉",
+        'writers': "钱国伟、陈金胜",
+        'type': "综艺游戏",
+        'language': "国语",
+        'time': "30集",
+        'introduce1': "曾志伟再以「奖门人」身分现身电视城，并率领历代「奖老」陈小春、钱嘉乐、林晓峰、江欣燕、阮兆祥、金刚、Otto和兰茜强势列阵，展开最後一轮《奖门人》疯狂爆笑旅程。《奖门人》节目十八年来保持人气高企，全赖各位艺人全情投入，在游戏过程中真情流露大放笑弹。《超级无敌奖门人 终极篇》贯彻「抵死过瘾」风格，玩一些在以前奖门人系列玩的经典游戏。还会陆续加入不同类型全新游戏，如「超级无敌过过过」「超级无敌玩波波」、「超级无敌拍拍拍」、「超级无敌到到到」等，为观众送上源源不绝的爆笑惊喜。节目亦会精心挑选过去为人津津乐道的游戏环节片段，一起回顾不同年代《奖门人》经典时刻。此外，奖门人会举行一项简单而隆重的颁奖典礼，期间颁发「最佳男配角」、「最佳视觉效果」、「最佳马拉松选手」、「终生成就奖」等多项大奖，表扬多位在过去节目中表现出色的参赛艺人。",
+        'introduce2': "",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/kx01.webp',
+          '../img/introduced/kx02.webp',
+          '../img/introduced/kx03.webp',
+          '../img/introduced/kx04.webp',
+          '../img/introduced/kx05.webp',
+          
+        ],
+      },
+         //无限超越班
+
+      'wxcyb': {
+        'title': "无限超越班",
+        'title_msg':"节目以经典砥砺当下，集结香港与内地艺人，深度交流、合作共创，探索演绎方式，精进艺术技能 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/03.jpg",
+        'director': "吴彤",
+        'writers': "陈明岭、冯页迪",
+        'type': "演员专业艺训励志真人秀",
+        'language': "国语",
+        'time': "110 分钟",
+        'introduce1': "节目背景:作为一代人的共同记忆，中国香港影视作品塑造了众多经典的荧幕形象与片段，从业人员也给人留下了刻苦努力、踏实敬业的职业形象。胶卷的光影中记录着时代的闪耀，同时刻写着前行者的尝试与创造。无数的经典港片作品为一代人留下许多的快乐记忆，让人时常回味。《无限超越班》在经典中学习，在回顾中超越，一起探寻记忆深处的港剧回忆",
+        'introduce2': "节目定位:《无限超越班》立足经典、节目主旨让演员脱离光环、回归初心 [11] 。那些在观众记忆中留下高光瞬间的港片戏骨们带着丰富的演绎经验，与青年演员展开多个层面的合作交流，共同迎接新生代演员们的无限超越。节目以经典为鉴，立足当下、放眼未来，为影视行业的创作与发展寻找启发与更多可能",
+        'introduce3': "节目模式:《无限超越班》以职场为框架，以情怀为内核，前辈艺人带训青年演员，通过“无线训练班”的方式，助力艺员精进艺术技能。中国香港及内地两地演员在严肃的职场环境中绷紧神经，在严苛的环境下努力成长",
+        'video_capture': [
+          '../img/introduced/wx01.webp',
+          '../img/introduced/wx02.webp',
+          '../img/introduced/wx03.webp',
+          '../img/introduced/wx04.webp',
+          
+        ],
+      },
+         //大侦探第八季
+      'dzt': {
+        'title': "大侦探第八季",
+        'title_msg':"节目以特定空间中发生的“案件”为背景，六位玩家扮演不同的人物角色，共同面对一起精心策划的“案件”，并通过搜集证据和推理找出真正的“凶手” ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/06.jpg",
+        'director': "晏吉",
+        'writers': "蔡怀军",
+        'type': "互联网普法教育推理节目",
+        'language': "国语",
+        'time': "110 分钟",
+        'introduce1': "节目背景:《大侦探第八季》版权来自韩综《犯罪现场》，会邀请各位嘉宾共同完成一个复杂的案件推理 [19] 。节目经过七年八季的沉淀与迭代，在守护“大侦探宇宙”的基础上持续扩张“版图”，延续ip主题、创新推理模式、呈现全新题材、聚焦社会热点，打造更庞大的宇宙",
+        'introduce2': "节目特色:《大侦探第八季》在延续往季实景推理探案的基础上，首次在剧情走向中融入桌游、阵营战等玩法。节目在剧情上不仅依然着眼于与现实社会强关联的热点议题，将社会热议事件融入角色故事线；而且用12个案件故事打造一个完整庞大的世界观 [18] 。衍生环节《大侦探合议庭》中，法官们通过讲解法律条文、介绍量刑幅度、分析法律行为，帮助观众重新审视加害人与受害者的情理抉择，理性厘清是非边界，提出专业的法律引导.",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/dzt01.webp',
+          '../img/introduced/dzt02.webp',
+          '../img/introduced/dzt03.webp',
+          '../img/introduced/dzt04.webp',
+          '../img/introduced/dzt05.webp',
+          
+          
+        ],
+      },
+         //奔跑吧·共同富裕篇
+      'bpb': {
+        'title': "奔跑吧·共同富裕篇",
+        'title_msg':"节目通过全新叙事传递生态之美、文化之美、产业之美，点亮观众心中对于新时代共同富裕的信心和对美好生活的期许 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/08.jpg",
+        'director': "尤敏超",
+        'writers': "徐臻、冯青野",
+        'type': "户外竞技真人秀",
+        'language': "国语",
+        'time': "90 分钟",
+        'introduce1': "节目背景:2021年，《中共中央国务院关于支持浙江高质量发展建设共同富裕示范区的意见》发布，共同富裕示范区正式落地浙江。示范区的落户，既是国家对于浙江作为社会经济发展强省的肯定，也开启了浙江建设更加美好生活图景的新纪元。节目内容是观察社会发展的窗口，也是奏响时代音符的号角。《奔跑吧》作为主流媒体的品牌综艺节目，担负着顺应时代而守正创新，积极为新时代发展添砖加瓦的使命责任.",
+        'introduce2': "节目特色:《奔跑吧·共同富裕篇》在国家巩固拓展脱贫攻坚成果、向共同富裕奋进的时代节点，走进浙江、福建两省的广阔山水间，向观众展示现代化农村、农业、农民的新面貌，展现文化、生态、产业的高质量发展，以沉浸式“奔跑”体验和真实镜头，放送新时代的“共富故事”。节目继续优化“星素结合”形式，其镜头下的“人民”除了“奔跑”的艺人嘉宾，还有一系列的素人主角；节目走进他们奋斗的场域，记录他们昂扬的姿态，展现他们收获的成果，勾勒出新农人推进农业、农村现代化的火热图景",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/bpb01.webp',
+          '../img/introduced/bpb02.webp',
+          '../img/introduced/bpb03.webp',
+          '../img/introduced/bpb04.webp',
+          '../img/introduced/bpb05.webp',
+          
+          
+        ],
+      },
+         //小明星大跟班
+      'xmx': {
+        'title': "小明星大跟班",
+        'title_msg':"《小明星大跟班》（非正式名称为《乾隆驾到》）接档《康熙来了》，是由吴宗宪与其女吴姗儒主持的一档综艺访谈节目，2016年1月25日起在中天综合台周一至周四晚十点播出 ",
+        'video_url': "../src/video/1.mp4",
+        'posters': "../img/variety/07.jpg",
+        'director': "尤敏超",
+        'writers': "徐臻、冯青野",
+        'type': "综艺访谈",
+        'language': "国语",
+        'time': "45 分钟",
+        'introduce1': "节目简介：吴宗宪与女儿吴姗儒(Sandy)首次搭挡主持节目《小明星大跟班》，接棒《康熙来了》黄金时段。2016年1月24日，两人首次录影，默契十足。首集单元是“宪哥挑女婿”，有20位以上的男艺人现场施展浑身解数，追求吴姗儒。爸爸吴宗宪不愧是综艺一哥，看着女儿与男星公主抱、玩亲亲，依旧表现淡定，更像是在“看好戏”。 ",
+        'introduce2': "节目制作:接档《康熙来了》的《小明星大跟班》  将由吴宗宪与女儿吴姗儒主持 。吴宗宪这回的节目制作团队是上档节目《康熙》的原班人马",
+        'introduce3': "",
+        'video_capture': [
+          '../img/introduced/xmx01.webp',
+          '../img/introduced/xmx02.webp',
+          '../img/introduced/xmx03.webp',
+          '../img/introduced/xmx04.webp',
+          
+          
+        ],
+      },
+        
+      }
+
+      
+  
+      // 获取url参数
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) { return pair[1]; }
+        }
+        return (false);
+      }
+  
+  
+      var qname = getQueryVariable("name")
+      var datas = list[qname]
+      // 标题
+      document.getElementById('title').innerHTML = datas['title']
+      //标题描述
+      document.getElementById('title_msg').innerHTML = datas['title_msg']
+      // 海报
+      document.getElementById('posters').src = datas['posters']
+      // 导演
+      document.getElementById('director').innerHTML = datas['director']
+      // 编剧
+      document.getElementById('writers').innerHTML = datas['writers']
+      // 类型
+      document.getElementById('type').innerHTML = datas['type']
+      // 语言
+      document.getElementById('language').innerHTML = datas['language']
+      // 片长
+      document.getElementById('time').innerHTML = datas['time']
+      // 视频介绍1
+      document.getElementById('introduce1').innerHTML = datas['introduce1']
+      // 视频介绍2
+      document.getElementById('introduce2').innerHTML = datas['introduce2']
+      // 视频介绍3
+      document.getElementById('introduce3').innerHTML = datas['introduce3']
+  
+      var video_url = document.getElementById('video_url') // 视频地址
+      var video_capture = document.getElementsByClassName("video_capture") // 视频截图
+  
+      video_url.src = datas['video_url']
+  
+      for (var i = 0; i < video_capture.length; i++) {
+        video_capture[i].src = datas['video_capture'][i]
+      }
+  
+        // video_capture.src = datas['video_capture']
+    </script>
+</body>
+</html>

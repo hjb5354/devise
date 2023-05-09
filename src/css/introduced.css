@@ -1,0 +1,389 @@
+img {    
+
+  image-rendering: -moz-crisp-edges; /* Firefox */     
+  image-rendering: -o-crisp-edges; /* Opera */      
+  image-rendering: -webkit-optimize-contrast; /*Webkit (non-standard naming) */ 
+  image-rendering: crisp-edges; 
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  
+  }
+.flex-c-t {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+section .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body{background-color: #000;} */
+a:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+  a {
+  transition: color 0.2s;
+  text-decoration: none !important;
+}
+
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+  ul,
+li {
+  margin: 0;
+  list-style-type: none;
+}
+input,
+textarea,
+label {
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+/* 公共 */
+body{
+  
+  width: 100%;
+    min-width: 1903px;
+    width: auto;
+ }
+ /* 顶部布局 */
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 5, 5);
+    position: relative;
+    margin-top: -18px;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+   
+  .top-container{
+    width: 1226px;
+    height: 20px;
+    margin: 0 350px;
+  }
+   .top-title{
+    display: block;
+    
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transform:translateY(80%);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px black;
+    float: left;
+    width: 300px;
+    position: absolute;
+    left: 10px;
+    transform:translateY(70%);
+    
+    
+   }
+
+  .header .logo{
+    float: left;
+    margin-top: 0px;
+  }
+   
+  .logo a{
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+   
+  .header .list{
+    float: left;
+    width: 820px;
+    height: 88px;
+    padding: 12px 0 0 30px;
+  }
+   
+  .clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+  }
+   
+  a{
+    transition: color 0.2s;
+    text-decoration: none !important;
+  }
+  .list>li>a{
+    color:#e0e0e0;
+    display: inline-block;
+    /* margin: 0 px; */
+    color: rgb(206, 181, 56);
+  }
+  a:visited{
+    color: #e0e0e0;
+  }
+   
+  .list li{
+    float: left;
+    list-style: none;
+  }
+   
+  .list li{
+    padding: 28px 8px 28px ;
+    display: block;
+    color: rgb(206, 181, 56);
+  }
+   
+   .search{
+    float: right;
+    width: 296px;
+    margin-top: 10px;
+    position: absolute;
+    top: 18px;
+    right: 153px;
+  }
+  .search form{
+    height: 50px;
+    width: 296px;
+  } 
+   
+  .content1{
+     display: block;
+    width: 223px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+    float:right;
+     
+  }
+   
+  .search1{
+    width: 49px;
+    height: 49px;
+    float: right;
+  } 
+   
+  .list li:hover{
+    background-color: #c0c0c0;
+    opacity: 0.5;
+    font-size: larger;
+  }
+
+.denglu li{
+  list-style: none;
+  display: block;
+  float: right;
+  padding:28px 10px 38px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+  .denglu li:hover{
+    color: rgb(168, 81, 81);
+    font-size: larger;
+  }
+  
+
+  
+
+.introduced-backimg-box {
+    background-image: url('../img/beijing.jpg');
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* top: 150px; */
+    z-index: -2;
+  }
+  .introduced-title {
+    margin-top: 100px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.397);
+    text-align: center;
+    color: white;
+  }
+  
+  .introduced-title h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  
+  .introduced-title p {
+    max-width: 650px;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  
+  .introduced-video {
+    height: 600px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0);
+  }
+  
+  .introduced-body {
+    margin-top: 20px;
+    /* background-color: rgb(195, 205, 50); */
+    /* height: 500px; */
+  }
+  
+  .introduced-body .left {
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px rgb(236, 236, 236) solid;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* .introduced-body .left img {
+    width: 280px;
+    height: 352px;
+  } */
+  
+  .introduced-body .left ul {
+    margin: 10px;
+  }
+  
+  .introduced-body .left li {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .introduced-body .left li span:nth-child(1) {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .introduced-body .left li span:nth-child(2) {
+    color: rgb(100, 100, 100);
+  }
+  
+  .introduced-body .left button {
+    width: 222px;
+    height: 46px;
+    background-color: #e40914;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: 30px auto 15px auto;
+    border-radius: 23px;
+  }
+  
+  .introduced-body .left button:hover {
+    background-color: #f10f1b;
+  }
+  
+  .introduced-body .right {
+    /* background-color: tomato; */
+    height: 100%;
+    padding-left: 30px;
+    flex: 1;
+  }
+  
+  .introduced-body .right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .introduced-body .right span {
+    display: inline-block;
+    word-spacing: 3px;
+    text-indent: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .introduced-body .right img {
+    
+    margin-bottom: 20px;
+    width: 100%;
+    
+    
+  }
+  .Bottom {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    
+    text-align: center;
+    /* background-color: black; */
+  }
+  button {
+    outline: none;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+  }
+
+  .introduced-body .left img{
+    height: 330px;
+    width: 250px;
+  }
+  

@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  button {
+    outline: none;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+  }
+  
+/* 布局 */
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .flex {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  .flex-c {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-c-t {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .flex-c-b {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .flex-s {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-l {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .flex-l i {
+    font-size: 20px;
+  }
+  
+  .flex-r {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #ifram {
+    height: auto;
+  }
+  
+  /* 背景图 */
+body{
+   
+      
+ background-color:white !important; 
+}
+  /* 联系我 */
+  .contact-message {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  
+  .contact-message .icon-msg {
+    /* background-color: violet; */
+    margin: 3px;
+    height: 200px;
+    /* min-width: 300px; */
+    /* width: 48%; */
+    /* flex: 0.25; */
+  }
+  
+  
+  
+  .contact-message .icon-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-message .icon-msg i {
+    font-size: 50px;
+    color: rgb(99, 99, 99);
+  }
+  
+  .contact-message .icon-msg h3 {
+    font-size: 1.3em;
+  }
+  
+  .contact-message .icon-msg span {
+    width: 240px;
+    color: #757575;
+  }
+  
+  .contact-hr {
+    background-color: #eee;
+    height: 1px;
+    margin: 50px 0;
+  }
+  
+  .contact h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .contact span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    border: 1px solid #e1e1e1;
+    display: block;
+  }
+  
+  .contact .h-input {
+    width: 100%;
+    /* background-color: ant  iquewhite; */
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact .h-input input,
+  .contact .h-input textarea {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #aaa;
+  }
+  
+  .contact .h-input .contact-subj {
+    width: 100%;
+  }
+  
+  .contact .h-input textarea {
+    width: 100%;
+  }
+  
+  .contact button {
+    min-width: 200px;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px ;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(238, 54, 54);
+    
+  }
+  
+  .contact > div {
+    margin: 50px 0;
+  }
+  .copyright {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+   
+    }
+    .titl-popular-hr {
+      margin: 0 auto;
+      height: 1px;
+      background-color: rgba(88, 61, 61, 0.151);
+      max-width:100%;
+      margin-bottom: 50px;
+    }
+  
+  

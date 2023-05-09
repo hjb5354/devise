@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影分享网站</title>
+    <link rel="stylesheet" href="../css/top.css">
+   <link rel="stylesheet" href="../css/bofang.css">
+</head>
+<div class="header ">
+    <div class="top-container " clearfix>
+      <div>
+          <div class="top-title">
+              <h1>电影分享网站</h1>
+          </div>
+      </div>
+        <div class="logo">
+            <a href="#">
+                <img src="../img/top-tupi.jpg" width="150" alt="电影分享网站">
+            </a>
+        </div>
+        <ul class="list">
+            <li class="current" data-id="111">
+               <a href="../index.html#111">首页</a> 
+            </li>
+            <li data-id="222">
+                <a href="../index.html#222">动漫</a>
+                
+            </li >
+            <li data-id="333">
+                <a href="../index.html#333">电影</a>
+            </li>
+            <li data-id="444">
+               <a href="../index.html#444">电视剧</a>
+            </li>
+            <li data-id="555">
+                <a href="../index.html#555">综艺</a>
+            </li>
+            <!-- <li data-id="666">
+                播放
+            </li> -->
+            <li data-id="777">
+                <a href="../index.html#777"> 联系我</a> 
+            </li>
+            
+           
+            
+            
+        </ul>
+        
+        
+        <div class="search">
+            <form>
+                 <input type="submit" value="搜索" class="search1">
+                <input type="text" class="content1">
+                
+            </form>
+      </div>
+          <ul class="denglu">
+             <li data-id="666">
+                  <a href="./denglu.html" target="_blank">登录/注册</a>
+                  <!-- 登录/注册 -->
+             </li> 
+          </ul>
+    </div>
+</div>  
+<body onload="init()">
+ 
+    <div id="player">
+		<video id="video" src="../video/1.mp4" controls="controls" autoplay="autoplay"></video>
+		<div id="name">请选择视频</div>
+		<div id="author"></div>
+	</div>
+    <!-- <video src="http://sp.ntaotu.com/localhost-wordpress-phpstudy.mp4" controls="controls" width="500" height="300">您的浏览器不支持播放该视频！</video> -->
+	
+	<div id="selector"></div>
+	<div id="d" style="width: 0px; height: 0px;"></div>	
+    </div>
+<script src="../js/bofang.js"></script>
+
+
+</body>
+
+</html>

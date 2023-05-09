@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{background-color: #000;
+  background-size: 100% 100%;
+  background-size: cover ;  /* 让背景图基于容器大小伸缩 */
+ background-attachment:fixed;}
+a:focus {
+    outline: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+    a {
+    transition: color 0.2s;
+    text-decoration: none !important;
+  }
+  
+    h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    line-height: unset;
+    font-size: unset;
+    font-weight: unset;
+  }
+  
+  img {    
+
+    image-rendering: -moz-crisp-edges; /* Firefox */     
+    image-rendering: -o-crisp-edges; /* Opera */      
+    image-rendering: -webkit-optimize-contrast; /*Webkit (non-standard naming) */ 
+    image-rendering: crisp-edges; 
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+    
+    }
+    ul,
+  li {
+    margin: 0;
+    list-style-type: none;
+  }
+  input,
+  textarea,
+  label {
+    outline: none;
+    border: none;
+    margin: 0;
+  }
+  
+  button {
+    outline: none;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  a:focus,
+  input:focus,
+  textarea:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  }
+  
+  /* 公共 */
+
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .none {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+  }
+  
+  .back-botm {
+    /* background-color: black; */
+    height: 100vh;
+  }
+  
+  .bottom-page span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .bottom-page div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition-property: background-color;
+    -moz-transition-property: background-color; /* Firefox 4 */
+    -webkit-transition-property: background-color; /* Safari and Chrome */
+    -o-transition-property: background-color; /* Opera */
+    transition-duration: 0.5s;
+    border: 1px solid #eee;
+    margin: 0 10px;
+  }
+  .bottom-page .active {
+    color: white;
+    background-color: red;
+  }
+  .bottom-page div:hover {
+    color: white;
+    background-color: red;
+  }
+
+/* 布局 */
+.flex{
+    
+        display: -webkit-flex;
+        display: flex;
+      
+}
+
+.flex-c {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .flex-s {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/* .flex-s {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+  /* 轮播图 */
+.slide {
+    height: 680px;
+    padding: 0px 0px 50px;
+    /* background-color: #fff; */
+    font-size: 14px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    
+   
+    /*字体抗锯齿*/
+}
+
+.slide {
+    position: relative;
+    width: 75%;
+    margin: 0px 200px 100px;
+    left: 100px;
+}
+
+.content {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: top;
+    transform: translateY(18%);
+}
+
+.content-i {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.content-i-right {
+    right: -50%;
+}
+
+.content-i .img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.swiper_img img{
+  min-width: 1500px;
+  min-height: 600px;
+}
+
+.img img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.content-i .caption {
+    position: absolute;
+    top: 100px;
+    right: 60%;
+}
+
+.caption h2 {
+  font-size: 10px;
+    line-height: 40px;
+    color: #b5b5b5;
+    text-align: right;
+    margin-right: 40px;
+    
+    transition: all .8s .5s;
+}
+
+.caption h3 {
+    font-size: 30px;
+    
+    color: #555;
+    text-align: right;
+    font-weight: normal;
+    margin-right: -80px;
+    transition: all .8s .5s;
+}
+
+.content-i-active {
+    opacity: 1;
+    right: 0;
+}
+
+.content-i-active .caption h2,
+.content-i-active .caption h3 {
+    margin-right: 0;
+}
+
+.ctrl {
+    position: absolute;
+    bottom:-154px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+    line-height: 15px;
+    background-color: #000;
+    text-align: center;
+    
+}
+
+.ctrl .ctrl-i {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background-color: #666;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.ctrl .ctrl-i:hover {
+    background-color: #f0f0f0;
+}
+
+.ctrl-i img {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.ctrl .ctrl-i:hover img {
+    bottom: 15px;
+    opacity: 1;
+    -webkit-box-reflect: below 0px -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.3));
+    /*倒影：below向下，0px无间距，*/
+}
+
+.ctrl .ctrl-i-active {
+    background-color: #f0f0f0;
+}
+
+.ctrl .ctrl-i-active:hover {
+    background-color: #f0f0f0;
+}
+
+.ctrl .ctrl-i-active:hover img {
+    opacity: 0;
+}
+
+.swiper-arrow{
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-80%);
+    /* 元素不确定高度，垂直居中 */
+    
+    /* 元素确定高度36px，垂直居中 */
+    cursor: pointer;
+}
+.prev{
+    left: 2rem;
+
+}
+.next{
+    right: 2rem;
+}
+
+
+   
+    /* 高度塌陷 */
+    .clearfix::before,
+    .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.dibu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    
+    border-bottom:  1px solid #ccc;
+    height: 180px;
+    padding-left:190px ;
+    padding-top: 50px;
+    
+}
+.dibu ul,li{
+    list-style-type: none;
+}
+.dobu ul:nth-child(1){
+    padding-left: 100px;
+}
+.dibu ul li a{
+    color: #666;
+}
+
+.hezi2 {
+    text-align: center;
+    padding-top: 20px;
+    }
+    
+.links {
+    margin-bottom: 15px;
+    }
+    
+.links a {
+    margin: 0 3px;
+    color: #666;
+    }
+    .GG {
+        padding-bottom: 40px;
+       
+       
+        }
+    .GG img{
+        width: 100%;
+        height: 150px;
+    }
+          
+        
+      
+       
+         
+.copyright {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color:#fff;
+    }
+/* 背景图 */
+    .video-box {
+        min-height: 1000px;
+        width: 1903px;
+        position: absolute;
+        background-image: url('../img/bg-01.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* max-width: 100%; */
+        white-space:nowrap;
+        z-index: -2;
+      }
+      
+      .video-box video {
+        /* object-fit: fill; */
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: 100%;
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+      }
+      
+      .video-box video source {
+        height: 100%;
+        width: 100%;
+      }
+      
+      .video-botm {
+        position: absolute;
+        width: 100%;
+        height: 173%;
+        background-color: black;
+        z-index: -3;
+      }
+      .mask {
+        height: 1000px;
+        width: 100%;
+        /* background-color: rgba(0, 0, 0, 0.35); */
+        position: absolute;
+        z-index: -1;
+      }
+      
+      /* 热门电影 */
+      .container {
+        max-width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        padding:0 20px;
+
+    }
+        .titl-popular {
+        padding-top: 220px;
+        padding-bottom: 10px;
+        font-size: 24px;
+        color: white;
+      }
+      
+      .titl-popular-hr {
+        margin: 0 auto;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.103);
+        max-width: 1200px;
+        margin-bottom: 50px;
+      }
+      
+      .titl-popular i {
+        margin-right: 15px;
+        
+        cursor: pointer;
+      
+      }
+      .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .icon-sanjiao4:before {
+        content: "\e600";
+      }
+      .icon-triangle-right:before {
+        content: "\e67d";
+      }
+      
+      .popular-clothing {
+        padding: 60px 0;
+      }
+      
+      .popular-clothing .show-img {
+        width: 30%;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      
+      .popular-clothing .show-img img {
+        width: 350px;
+      }
+      
+      .popular-clothing .show-img:hover {
+        transition: 1s;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0.63);
+        z-index: 99;
+      }
+      
+      .popular-clothing .show-img span {
+        display: block;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin: 5px;
+      }
+      
+      .popular-clothing .show-img .t2 {
+        font-size: 13px;
+      }
+      
+      .popular-clothing .barrage {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        /* pointer-events：none; */
+        pointer-events: none;
+        /* background-color: rgb(146, 146, 146); */
+      }
+      
+      .popular-clothing .barrage marquee {
+        color: rgb(253, 253, 253);
+        transition: 0.5s;
+        font-size: 23px;
+      }
+      
+      .back-color1 {
+        background-color: black;
+      }
+      
+      .blog .left {
+        background-color: yellowgreen;
+      }
+      
+      .blog .right {
+        background-color: rgb(50, 205, 58);
+      }
+      
+

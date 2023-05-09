@@ -1,0 +1,73 @@
+/*                       顶部                               */
+.top{
+    display: flex;
+    margin: 0;
+}
+/*                  顶部文字top-title                       */
+.top-title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px black;
+   
+
+}
+/*                      顶部搜索栏                          */
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background-color: #2f3640;
+    height: 40px;
+    padding: 10px;
+    border: radius 40px; 
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    /* 动画过渡 */
+    transition: 0.4s;
+}
+.search-bth{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+    /* 弹性布局 水平垂直居中 */
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    /* 动画过渡 */
+    transition: 0.4s;
+}
+.search-box:hover .search-txt{
+    width: 200px;
+    padding: 0 6px;
+}
+.search-box:hover .search-btn{
+    background-color: #fff;
+}
+
+
+
+
+/*                  顶部登录键              */
+.denglu{
+
+    background-color: #fff;
+    position:fixed;
+    
+}

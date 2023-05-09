@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/top.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="../src/css/iconfont.css">
+  <script src="./js/jquery-3.3.1.min.js"></script>
+   
+
+    <!-- <script src="./js/top.js"></script> -->
+    
+
+    <style>
+      nav{width: 100%;}
+    </style>
+  <title>电影分享网站</title>
+</head>
+
+<body id="mbody">
+  <nav>
+<!-- 背景视频 -->
+ <div class="video-box ">
+    <video width="100%" height="100%" muted loop autoplay>
+      <source src="./other/1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="mask">
+  </div>
+  
+<!-- 轮播图 -->
+    <!--幻灯片-->
+    <div class="slide  flex-s">
+
+        <!--content: 主体内容-->
+        <div class="content" id="div_content">
+            <template id="tpl_content">
+                <div class="content-i {{css}}">
+                    <div class="swiper_img">
+                        <a href="#">
+                            <img src="./img/lunbotu/{{imgName}}.jpg">
+                         </a>
+                    </div>
+                    <div class="caption">
+                        <h2>{{h2}}</h2>
+                        <h3>{{h3}}</h3>
+                    </div>
+                    <div class="prev swiper-arrow">&lt;</div>
+                    <div class="next swiper-arrow">&gt;</div>
+                    
+                </div>
+            </template>
+        </div>
+
+        <!--ctrl: 幻灯片控制-->
+        <div class="ctrl" id="div_ctrl">
+            <template id="tpl_ctrl">
+                <div class="ctrl-i" onclick="{{onclick}}">
+                    <img src="./img/lunbotu/{{imgName}}.jpg">
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+   
+    <!-- 热门电影 -->
+     <!-- 标题 -->
+     
+  <div class="titl-popular container flex-s">
+    <h2 class="" >热 门 动 漫</h2>
+    <ul class="flex-c">
+      <li>
+        <i class="iconfont icon-zuo"></i>
+      </li>
+      <li>
+        <i class="iconfont icon-you"></i>
+      </li>
+    </ul>
+
+  </div>
+  <div class="titl-popular-hr"></div>
+  <div class="popular-clothing container flex-s clearfix" >
+    <div class="barrage">
+      <marquee behavior="" direction="" truespeed scrollamount="1" scrolldelay="10"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="11" scrolldelay="72"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="58"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="2" scrolldelay="45"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="20"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="50"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="15"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="7" scrolldelay="65"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="85"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="41"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="17" scrolldelay="12"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="78"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="58"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="98"> </marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="52"></marquee>
+      <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="35"></marquee>
+    </div>
+    <div class="show-img">
+      <a href="./html/introduced.html?name=qzgs">
+        <img src="./img/全职高手2.jpg" alt="" onmouseover="over('#FF1493')" onmouseleave="leave(this)">
+        <span class="t1">全职高手2</span>
+        <span class="t2">内地·2020·战斗·竞技·腾讯出品·运动</span>
+      </a>
+    </div>
+    <div class="show-img">
+      <a href="./html/introduced.html?name=Doraemon">
+        <img src="./img/哆啦A梦.jpg" alt="" onmouseover="over('#6495ED')" onmouseleave="leave(this)">
+        <span class="t1">哆啦A梦[日]</span>
+        <span class="t2">2011·科幻·搞笑·冒险·经典</span>
+      </a>
+    </div>
+    <div class="show-img">
+      <a href="./html/introduced.html?name=Conan">
+        <img src="./img/名侦探柯南.jpg" alt="" onmouseover="over('#FF69B4')" onmouseleave="leave(this)">
+        <span class="t1">名侦探柯南</span>
+        <span class="t2">日本·推理·经典</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="popular-clothing container flex-s clearfix">
+  <div class="barrage">
+    <marquee behavior="" direction="" truespeed scrollamount="1" scrolldelay="10"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="11" scrolldelay="72"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="58"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="2" scrolldelay="45"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="20"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="50"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="15"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="7" scrolldelay="65"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="85"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="41"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="17" scrolldelay="12"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="78"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="58"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="98"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="52"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="35"></marquee>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=Pokemon">
+      <img src="./img/宠物小精灵.jpg" alt="" onmouseover="over('#40E0D0')" onmouseleave="leave(this)">
+      <span class="t1">精灵宝可梦</span>
+      <span class="t2">喜剧 / 科幻 , 2020</span>
+    </a>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=CrayonShin">
+      <img src="./img/蜡笔小新.jpg" alt="" onmouseover="over('#FF7F50')" onmouseleave="leave(this)">
+      <span class="t1">蜡笔小新</span>
+      <span class="t2">日本·搞笑·经典</span>
+    </a>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=SPY">
+      <img src="./img/间谍过家家.jpg" alt="" onmouseover="over('#EE82EE')" onmouseleave="leave(this)">
+      <span class="t1">间谍过家家</span>
+      <span class="t2">日本·2022</span>
+    </a>
+  </div>
+</div>
+   
+<div class="titl-popular container flex-s">
+  <h2 class="" >热 门 电 影</h2>
+  <ul class="flex-c">
+    <li>
+      <i class="iconfont icon-zuo"></i>
+    </li>
+    <li>
+      <i class="iconfont icon-you"></i>
+    </li>
+  </ul>
+
+</div>
+<div class="titl-popular-hr"></div>
+<div class="popular-clothing container flex-s clearfix" >
+  <div class="barrage">
+    <marquee behavior="" direction="" truespeed scrollamount="1" scrolldelay="10"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="11" scrolldelay="72"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="58"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="2" scrolldelay="45"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="20"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="50"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="15"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="7" scrolldelay="65"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="85"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="41"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="17" scrolldelay="12"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="78"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="58"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="98"> </marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="52"></marquee>
+    <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="35"></marquee>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=Elephant">
+      <img src="./img/电影/01.jpg" alt="" onmouseover="over('#51acb5')" onmouseleave="leave(this)">
+      <span class="t1">魔术师的大象</span>
+      <span class="t2">澳大利亚, 2023</span>
+    </a>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=Chapter">
+      <img src="./img/电影/02.jpg" alt="" onmouseover="over('#ed569d')" onmouseleave="leave(this)">
+      <span class="t1">疾速追杀4 John Wick: Chapter 4</span>
+      <span class="t2">国,加拿大, 2020</span>
+    </a>
+  </div>
+  <div class="show-img">
+    <a href="./html/introduced.html?name=PingPong">
+      <img src="./img/电影/03.jpg" alt="" onmouseover="over('#cc7c37')" onmouseleave="leave(this)">
+      <span class="t1">中国乒乓之绝地反击 </span>
+      <span class="t2"> 剧情 / 运动,2023</span>
+    </a>
+  </div>
+</div>
+</div>
+<div class="popular-clothing container flex-s clearfix">
+<div class="barrage">
+  <marquee behavior="" direction="" truespeed scrollamount="1" scrolldelay="10"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="11" scrolldelay="72"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="58"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="42"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="2" scrolldelay="45"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="20"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="10"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="50"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="15"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="7" scrolldelay="65"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="85"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="41"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="17" scrolldelay="12"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="9" scrolldelay="68"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="78"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="58"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="5" scrolldelay="98"> </marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="8" scrolldelay="54"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="3" scrolldelay="52"></marquee>
+  <marquee behavior="" direction="" truespeed scrollamount="6" scrolldelay="35"></marquee>
+</div>
+<div class="show-img">
+  <a href="./html/introduced.html?name=kenan">
+    <img src="./img/电影/04.jpg" alt="" onmouseover="over('#0a1540')" onmouseleave="leave(this)">
+    <span class="t1">名侦探柯南：万圣节的新娘</span>
+    <span class="t2">动作 / 动画 / 悬疑, 2023</span>
+  </a>
+</div>
+<div class="show-img">
+  <a href="./html/introduced.html?name=hzw">
+    <img src="./img//电影/05.jpg" alt="" onmouseover="over('#f47f8c')" onmouseleave="leave(this)">
+    <span class="t1">航海王：红发歌姬</span>
+    <span class="t2">动作 / 动画 / 奇幻 / 冒险,2022</span>
+  </a>
+</div>
+<div class="show-img">
+  <a href="./introduced.html?name=Avatar">
+    <img src="./img/电影/06.jpg" alt="" onmouseover="over('#21ace6')" onmouseleave="leave(this)">
+    <span class="t1">阿凡达：水之道</span>
+    <span class="t2">动作 / 科幻 / 冒险, 2022</span>
+  </a>
+</div>
+</div>
+ 
+    
+   
+</nav>        
+    
+    <!-- 底部 -->
+    <div class="dibu flex-s">
+        <ul>
+            <li>服务指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">会员介绍</a></li>
+        </ul>
+
+        <ul>
+            <li>服务指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">会员介绍</a></li>
+        </ul>
+
+        <ul>
+            <li>服务指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">会员介绍</a></li>
+        </ul>
+        <ul>
+            <li>服务指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">会员介绍</a></li>
+        </ul>
+
+        <ul>
+            <li>服务指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">会员介绍</a></li>
+        </ul>
+
+        
+
+  <!-- </div> -->
+    </div>
+    <div class="hezi2">
+        <div class="links">
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        </div>
+    </div>
+    <!-- 广告 -->
+  <div id="GG" class="GG imgbox">
+    <!-- <div class="imgbox"></div> -->
+    <img src="./img/gg.jpg" alt="" srcset="">
+  </div>
+    <!-- </div> -->
+
+  <div class="bottom-hr">
+</div>
+    <div class="copyright">
+        胡杰彬的毕业设计
+    </div>
+
+    <iframe loop="loop" allow="autoplay" style="display:none " src="#"></iframe>
+  
+</body>
+</html>
